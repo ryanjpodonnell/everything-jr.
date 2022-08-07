@@ -2,6 +2,8 @@ local data = { 0 }
 local font = playdate.graphics.font.new('images/Nano Sans 2X')
 local gfx  = playdate.graphics
 
+playdate.display.setRefreshRate(50)
+
 function clearScreen()
   gfx.setColor(gfx.kColorWhite)
   gfx.fillRect(0, 0, 400, 240)
